@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Inovador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Lista de Tarefas</h1>
+
+        <!-- Personalização de Tema -->
+        <div id="themeSelector">
+            <button id="lightThemeBtn">Claro</button>
+            <button id="darkThemeBtn">Escuro</button>
+        </div>
+
+        <!-- Modo de Foco -->
+        <button id="focusModeBtn">Modo Foco</button>
+
+        <!-- Campo de Adição de Tarefa -->
+        <input type="text" id="taskInput" placeholder="Adicionar nova tarefa...">
+        <input type="date" id="taskDeadline" placeholder="Prazo">
+        <select id="taskCategory">
+            <option value="pessoal">Pessoal</option>
+            <option value="trabalho">Trabalho</option>
+            <option value="outros">Outros</option>
+        </select>
+        <button id="addTaskBtn">Adicionar</button>
+
+        <!-- Lista de Tarefas -->
+        <div id="taskList"></div>
+        
+        <!-- Histórico de Tarefas Completadas -->
+        <h2>Tarefas Completadas</h2>
+        <div id="completedTasks"></div>
+        
+        <!-- Pontuação da Gamificação -->
+        <div id="gamification">
+            <h3>Conquistas</h3>
+            <p>Pontos: <span id="points">0</span></p>
+        </div>
+    </div>
+
+    <!-- O script deve estar no final, logo antes de </body> -->
+    <script src="script.js"></script>
+</body>
+</html>
+
